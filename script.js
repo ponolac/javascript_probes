@@ -36,3 +36,13 @@ console.log(
     ". Is he married? " +
     isMarried
 );
+
+// Variable Mutation
+
+age = 'twenty';
+job = 23;
+
+alert(job);
+
+var lastName = prompt('what is the last name?');
+console.log(firstName + ' ' + lastName);
