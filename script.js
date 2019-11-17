@@ -108,3 +108,11 @@ console.log(x);
 
 x += 1;
 console.log(x);
+
+/*********
+ * If / Else Statements
+ *
+ */
+
+var firstName = "John";
+var civilStatus = "single";
