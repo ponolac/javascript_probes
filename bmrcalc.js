@@ -29,10 +29,12 @@ if (basalMetabolicRate > averageWomensBMR) {
   console.log(
     "Your BMR is higher than the average. The average is 1,400 kcal/day."
   );
-} else {
+} else if (basalMetabolicRate < averageWomensBMR) {
   console.log(
     "Your BMR is below the average. \nThe average is 1,400 kcal/day."
   );
+} else {
+  console.log("Your BMR is normal.");
 }
 
 /* We can calculate TDEE by multiplying BMR by an activity factor:
