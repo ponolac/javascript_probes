@@ -22,6 +22,17 @@ console.log("Your lean body mass is: " + leanBodyMass + "kg");
 var basalMetabolicRate = 370 + 21.6 * leanBodyMass;
 console.log("Your BMR is " + basalMetabolicRate + " kcal/day");
 
+// Store average womens BMR. Then use if/else to make a decision: show the user if their bmr result it above or below the average.
+
+var averageWomensBMR = 1400;
+if (basalMetabolicRate > averageWomensBMR) {
+  console.log(
+    "Your BMR is higher than the average. The average is 1,400 kcal/day."
+  );
+} else {
+  console.log("Your BMR is below the average. \nThe average is 1,400 kcal/day.");
+}
+
 /* We can calculate TDEE by multiplying BMR by an activity factor:
  *Sedentary* = 1.2
  *Lightly Active* = 1.375
@@ -31,4 +42,8 @@ console.log("Your BMR is " + basalMetabolicRate + " kcal/day");
 
 var activityFactor = parseFloat(prompt("What is your activity level?"), 10);
 var tDEE = basalMetabolicRate * activityFactor;
-console.log("Your TDEE is " + tDEE);
+console.log(
+  "Your TDEE is " +
+    tDEE +
+    "\nEat at TDEE level to maintain weight. \nEat above TDEE to gain weight. \nEat below TDEE to lose weight."
+);
