@@ -15,3 +15,9 @@ console.log(markBMI);
 
 var johnBMI = johnMass / (johnHeight * johnHeight);
 console.log(johnBMI);
+
+// create boolean variable containing information about whether Mark has a higher BMI than John.
+
+var higherBMI = markBMI > johnBMI;
+console.log(higherBMI);
+console.log('Is mark\'s bmi higher than john\'s? the answer is ' + higherBMI + '! ' + 'congrats to the winner. you won a car.');
