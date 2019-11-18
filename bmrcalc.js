@@ -25,4 +25,8 @@ console.log("Your BMR is " + basalMetabolicRate + " kcal/day");
  *Very Active* = 1.725
  *Extremely Active* = 1.9 */
 
- 
+var activityFactor = parseFloat(prompt("What is your activity level?"), 10);
+
+var tDEE = basalMetabolicRate * activityFactor;
+
+console.log("Your TDEE is " + tDEE)
