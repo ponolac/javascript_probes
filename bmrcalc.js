@@ -11,3 +11,9 @@ var userHeight = parseInt(prompt("What is your height (cm) ?"), 10);
 var leanBodyMass = 0.252 * userWeight + 0.473 * userHeight - 48.3;
 
 console.log("Your lean body mass is: " + leanBodyMass + "kg");
+
+// BMR = 370 + (9.7976 x LBM) kcal/day, where LBM is lean body mass in pounds.
+
+var basalMetabolicRate = 370 + 21.6 * leanBodyMass;
+
+console.log("Your BMR is " + basalMetabolicRate + " kcal/day");
