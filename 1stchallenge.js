@@ -7,3 +7,11 @@ markMass = 75;
 johnMass = 81;
 markHeight = 1.79;
 johnHeight = 1.92;
+
+// calculate both their bmi's
+
+var markBMI = markMass / (markHeight * markHeight);
+console.log(markBMI);
+
+var johnBMI = johnMass / (johnHeight * johnHeight);
+console.log(johnBMI);
