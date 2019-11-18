@@ -17,3 +17,12 @@ console.log("Your lean body mass is: " + leanBodyMass + "kg");
 var basalMetabolicRate = 370 + 21.6 * leanBodyMass;
 
 console.log("Your BMR is " + basalMetabolicRate + " kcal/day");
+
+/* Calculate TDEE by multiplying BMR by an activity factor:
+ *Sedentary* = 1.2
+ *Lightly Active* = 1.375
+ *Moderately Active* = 1.55
+ *Very Active* = 1.725
+ *Extremely Active* = 1.9 */
+
+ 
