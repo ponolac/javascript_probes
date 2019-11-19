@@ -151,3 +151,24 @@ age >= 18
   : console.log(firstName + " drinks coca-cola.");
 
 var drink = age >= 18 ? "beer" : "juice";
+
+/* Switch Statement (can replace multiple if-else statements for readability) */
+
+var job = 'instructor';
+switch (job) {
+    case 'teacher':
+    case 'instructor':
+        console.log(firstName + ' teaches kids how to code.');
+        break;
+    case 'driver':
+        console.log(firstName + ' drives a bus.');
+        break;
+    case 'poolman':
+        console.log(firstName + ' cleans pools.');
+        break;
+    case 'cop':
+        console.log(firstName + ' writes tickets as a cop.');
+        break;
+    default:
+        console.log(firstName + ' does nothing.');
+}
