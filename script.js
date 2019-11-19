@@ -204,3 +204,22 @@ switch (true) {
     default:
         console.log(firstName + ' is a man.');
 }
+
+// Switch statement.
+
+// Muscle-building time-scale. Year(s) of proper training, potential rate of muscle gain per year.
+
+var yearsOfTraining = 2;
+switch (true) {
+    case yearsOfTraining === 1:
+        console.log('If there is 1 year of proper training, expect 20-25lbs (2lbs/mo)');
+        break;
+    case yearsOfTraining === 2:
+        console.log('If there is 2 years of proper training, expect 10-12lbs (1lb/mo)');
+        break;
+    case yearsOfTraining === 3:
+        console.log('If there is 3 years of proper training, expect 5-6lbs (0.5lb/mo)');
+        break;
+    default:
+        console.log('If there is 4+ years of proper training, expect2-3lbs');
+}
