@@ -143,14 +143,14 @@
 
 /* Ternary Operator (aka conditional operator) allows you to write an if/else statement all in one line. */
 
-var firstName = "John";
-age = 17;
+// var firstName = "John";
+// age = 17;
 
-age >= 18
-  ? console.log(firstName + " drinks beer.")
-  : console.log(firstName + " drinks coca-cola.");
+// age >= 18
+//   ? console.log(firstName + " drinks beer.")
+//   : console.log(firstName + " drinks coca-cola.");
 
-var drink = age >= 18 ? "beer" : "juice";
+// var drink = age >= 18 ? "beer" : "juice";
 
 /* Switch Statement (can replace multiple if-else statements for readability) */
 
@@ -171,4 +171,36 @@ switch (job) {
         break;
     default:
         console.log(firstName + ' does nothing.');
+}
+
+// switch statement practice / refactor
+
+// var firstName = 'John';
+// var age = 24;
+
+// if (age < 13) {
+//     console.log(firstName + ' is a boy.');
+// } else if (age >= 13 && age < 20) {
+//     console.log(firstName + ' is a teenager.');
+// } else if (age >= 20 && age < 30) {
+//     console.log(firstName + ' is a young man.');
+// } else {
+//     console.log(firstName + ' is a man.');
+// };
+
+var firstName = 'John';
+var age = 99;
+
+switch (true) {
+    case age < 13:
+        console.log(firstName + ' is a boy.');
+        break;
+    case age >= 13 && age < 20:
+        console.log(firstName + ' is a teen.');
+        break;
+    case age >= 20 && age < 30:
+        console.log(firstName + ' is a young man.');
+        break;
+    default:
+        console.log(firstName + ' is a man.');
 }
