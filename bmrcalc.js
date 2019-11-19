@@ -22,20 +22,26 @@ console.log("Your lean body mass is: " + leanBodyMass + "kg");
 var basalMetabolicRate = 370 + 21.6 * leanBodyMass;
 console.log("Your BMR is " + basalMetabolicRate + " kcal/day");
 
-// Store average womens BMR. Then use if/else to make a decision: show the user if their bmr result it above or below the average.
+// Store average womens BMR. Then use if/else to make a decision: show the user if their bmr result is above or below the average.
+
+// var averageWomensBMR = 1400;
+// if (basalMetabolicRate > averageWomensBMR) {
+//   console.log(
+//     "Your BMR is higher than the average. The average is 1,400 kcal/day."
+//   );
+// } else if (basalMetabolicRate < averageWomensBMR) {
+//   console.log(
+//     "Your BMR is below the average. \nThe average is 1,400 kcal/day."
+//   );
+// } else {
+//   console.log("Your BMR is normal.");
+// }
+
+// Refactored else-if statement to ternary conditional operator:
 
 var averageWomensBMR = 1400;
-if (basalMetabolicRate > averageWomensBMR) {
-  console.log(
-    "Your BMR is higher than the average. The average is 1,400 kcal/day."
-  );
-} else if (basalMetabolicRate < averageWomensBMR) {
-  console.log(
-    "Your BMR is below the average. \nThe average is 1,400 kcal/day."
-  );
-} else {
-  console.log("Your BMR is normal.");
-}
+var resultOfAverageBMR = basalMetabolicRate < averageWomensBMR ? 'Your BMR is below the average.' : 'Your BMR is above the average.';
+console.log(resultOfAverageBMR);
 
 /* We can calculate TDEE by multiplying BMR by an activity factor:
  *Sedentary* = 1.2
