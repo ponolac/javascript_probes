@@ -113,14 +113,41 @@
  * If / Else Statements
  */
 
+// var firstName = "John";
+// var civilStatus = "single";
+
+// // log a string to the console whether he is married or not
+
+// if (civilStatus === "married") {
+//   console.log(firstName + ' is married');
+// } else {
+//   console.log(firstName + ' is single');
+// }
+
+/********* Boolean Logic */
+
+// log to console, depending on johns age, is he a boy, teen, young man, man.
+
+// var firstName = 'John';
+// var age = 24;
+
+// if (age < 13) {
+//     console.log(firstName + ' is a boy.');
+// } else if (age >= 13 && age < 20) {
+//     console.log(firstName + ' is a teenager.');
+// } else if (age >= 20 && age < 30) {
+//     console.log(firstName + ' is a young man.');
+// } else {
+//     console.log(firstName + ' is a man.');
+// };
+
+/* Ternary Operator (aka conditional operator) allows you to write an if/else statement all in one line. */
+
 var firstName = "John";
-var civilStatus = "single";
+age = 17;
 
-// log a string to the console whether he is married or not
+age >= 18
+  ? console.log(firstName + " drinks beer.")
+  : console.log(firstName + " drinks coca-cola.");
 
-if (civilStatus === "married") {
-  console.log(firstName + ' is married');
-} else {
-  console.log(firstName + ' is single');
-}
-
+var drink = age >= 18 ? "beer" : "juice";
