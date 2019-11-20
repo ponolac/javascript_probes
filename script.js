@@ -255,13 +255,18 @@ if (height == "23") {
 
 // Type coercion means the two data types don't have to match when using the non-strict equality operator: ==
 
-// Check if a variable is defined or undefined
+// Check if a variable exists using typeof
+var temp;
+if (typeof temp == "undefined") {
+  console.log("temp does NOT exist");
+} else {
+  console.log("temp exists");
+}
 
+// Check if a variable exists using if-else
 var volume;
-
 if (volume) {
   console.log("variable is defined");
 } else {
-    console.log("variable is NOT defined");
+  console.log("variable is NOT defined");
 }
-
