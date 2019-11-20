@@ -239,3 +239,11 @@ if (height || height === 0) {      // ie: so if (height var "exists or is define
 } else {
     console.log('variable has NOT been defined');
 }
+
+// Equality operators == and ===
+height = 23;
+if (height == '23') {
+    console.log('The == operator does type coercion');
+}
+
+// Type coercion means the two data types don't have to match when using the non-strict equality operator: ==
