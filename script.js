@@ -154,23 +154,23 @@
 
 /* Switch Statement (can replace multiple if-else statements for readability) */
 
-var job = 'instructor';
+var job = "instructor";
 switch (job) {
-    case 'teacher':
-    case 'instructor':
-        console.log(firstName + ' teaches kids how to code.');
-        break;
-    case 'driver':
-        console.log(firstName + ' drives a bus.');
-        break;
-    case 'poolman':
-        console.log(firstName + ' cleans pools.');
-        break;
-    case 'cop':
-        console.log(firstName + ' writes tickets as a cop.');
-        break;
-    default:
-        console.log(firstName + ' does nothing.');
+  case "teacher":
+  case "instructor":
+    console.log(firstName + " teaches kids how to code.");
+    break;
+  case "driver":
+    console.log(firstName + " drives a bus.");
+    break;
+  case "poolman":
+    console.log(firstName + " cleans pools.");
+    break;
+  case "cop":
+    console.log(firstName + " writes tickets as a cop.");
+    break;
+  default:
+    console.log(firstName + " does nothing.");
 }
 
 // switch statement practice / refactor
@@ -188,21 +188,21 @@ switch (job) {
 //     console.log(firstName + ' is a man.');
 // };
 
-var firstName = 'John';
+var firstName = "John";
 var age = 99;
 
 switch (true) {
-    case age < 13:
-        console.log(firstName + ' is a boy.');
-        break;
-    case age >= 13 && age < 20:
-        console.log(firstName + ' is a teen.');
-        break;
-    case age >= 20 && age < 30:
-        console.log(firstName + ' is a young man.');
-        break;
-    default:
-        console.log(firstName + ' is a man.');
+  case age < 13:
+    console.log(firstName + " is a boy.");
+    break;
+  case age >= 13 && age < 20:
+    console.log(firstName + " is a teen.");
+    break;
+  case age >= 20 && age < 30:
+    console.log(firstName + " is a young man.");
+    break;
+  default:
+    console.log(firstName + " is a man.");
 }
 
 // Switch statement.
@@ -211,17 +211,23 @@ switch (true) {
 
 var yearsOfTraining = 2;
 switch (true) {
-    case yearsOfTraining === 1:
-        console.log('If there is 1 year of proper training, expect 20-25lbs (2lbs/mo)');
-        break;
-    case yearsOfTraining === 2:
-        console.log('If there is 2 years of proper training, expect 10-12lbs (1lb/mo)');
-        break;
-    case yearsOfTraining === 3:
-        console.log('If there is 3 years of proper training, expect 5-6lbs (0.5lb/mo)');
-        break;
-    default:
-        console.log('If there is 4+ years of proper training, expect2-3lbs');
+  case yearsOfTraining === 1:
+    console.log(
+      "If there is 1 year of proper training, expect 20-25lbs (2lbs/mo)"
+    );
+    break;
+  case yearsOfTraining === 2:
+    console.log(
+      "If there is 2 years of proper training, expect 10-12lbs (1lb/mo)"
+    );
+    break;
+  case yearsOfTraining === 3:
+    console.log(
+      "If there is 3 years of proper training, expect 5-6lbs (0.5lb/mo)"
+    );
+    break;
+  default:
+    console.log("If there is 4+ years of proper training, expect2-3lbs");
 }
 
 /* Truthy and Falsy values, and equality operators */
@@ -234,16 +240,17 @@ switch (true) {
 
 var height = 0;
 
-if (height || height === 0) {      // ie: so if (height var "exists or is defined"), then (height) is converted to true, and if block is entered.
-    console.log('variable is defined');
+if (height || height === 0) {
+  // ie: so if (height var "exists or is defined"), then (height) is converted to true, and if block is entered.
+  console.log("variable is defined");
 } else {
-    console.log('variable has NOT been defined');
+  console.log("variable has NOT been defined");
 }
 
 // Equality operators == and ===
 height = 23;
-if (height == '23') {
-    console.log('The == operator does type coercion');
+if (height == "23") {
+  console.log("The == operator does type coercion");
 }
 
-// Type coercion means the two data types don't have to match when using the non-strict equality operator: == 
+// Type coercion means the two data types don't have to match when using the non-strict equality operator: ==
