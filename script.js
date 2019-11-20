@@ -232,9 +232,9 @@ switch (true) {
 
 // A handy way to test if a var has been defined or not:
 
-var height;
+var height = 0;
 
-if (height) {      // ie: so if (height var "exists or is defined"), then (height) is converted to true, and if block is entered.
+if (height || height === 0) {      // ie: so if (height var "exists or is defined"), then (height) is converted to true, and if block is entered.
     console.log('variable is defined');
 } else {
     console.log('variable has NOT been defined');
