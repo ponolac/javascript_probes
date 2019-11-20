@@ -223,3 +223,19 @@ switch (true) {
     default:
         console.log('If there is 4+ years of proper training, expect2-3lbs');
 }
+
+/* Truthy and Falsy values, and equality operators */
+
+// Falsy values: undefined, null, 0, '', NaN     These will be converted to false when evaluated in a true/false if/else condition.
+
+// Truthy values: NOT falsy values.
+
+// A handy way to test if a var has been defined or not:
+
+var height;
+
+if (height) {
+    console.log('variable is defined');
+} else {
+    console.log('variable has NOT been defined');
+}
