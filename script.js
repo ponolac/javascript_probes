@@ -236,10 +236,8 @@ switch (true) {
 
 // Truthy values: NOT falsy values.
 
-// A handy way to test if a var has been defined or not:
-
+// A way to test if a var has been defined or not:
 var height = 0;
-
 if (height || height === 0) {
   // ie: so if (height var "exists or is defined"), then (height) is converted to true, and if block is entered.
   console.log("variable is defined");
@@ -248,12 +246,18 @@ if (height || height === 0) {
 }
 
 // Equality operators == and ===
+// Type coercion means the two data types don't have to match when using the non-strict equality operator: ==
 height = 23;
 if (height == "23") {
   console.log("The == operator does type coercion");
 }
 
-// Type coercion means the two data types don't have to match when using the non-strict equality operator: ==
+// Equality operators: strict ===, and abstract ==
+// Type Coercion ==
+var force = 81;
+if (force == "81") {
+  console.log("The == operator does type coercion");
+}
 
 // Check if a variable exists using typeof
 var temp;
