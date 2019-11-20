@@ -246,4 +246,4 @@ if (height == '23') {
     console.log('The == operator does type coercion');
 }
 
-// Type coercion means the two data types don't have to match when using the non-strict equality operator: ==
+// Type coercion means the two data types don't have to match when using the non-strict equality operator: == 
