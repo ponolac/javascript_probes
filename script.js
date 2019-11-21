@@ -275,8 +275,8 @@ if (volume) {
   console.log("variable is NOT defined");
 }
 
-
 /* Functions */
+
 function calculateAge(birthYear) {
     return 2019 - birthYear;
 }
