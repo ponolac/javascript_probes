@@ -274,3 +274,11 @@ if (volume) {
 } else {
   console.log("variable is NOT defined");
 }
+
+
+/* Functions */
+function calculateAge(birthYear) {
+    return 2019 - birthYear;
+}
+
+calculateAge(1990);
