@@ -306,9 +306,14 @@ alert(
 function yearsUntilRetirement(year, firstName) {
   var age = calculateAge(year);
   var retirement = 65 - age;
-  console.log(firstName + " retires in " + retirement + " years.");
+
+  if (retirement > 0) {
+    console.log(firstName + " retires in " + retirement + " years.");
+  } else if (retirement < 0) {
+    console.log(firstName + " is already retired.");
+  }
 }
 
 yearsUntilRetirement(1990, "John");
-yearsUntilRetirement(1980, "Jimmy");
+yearsUntilRetirement(1950, "Jimmy");
 yearsUntilRetirement(1996, "Jason");
