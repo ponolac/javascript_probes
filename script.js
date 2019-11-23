@@ -277,11 +277,28 @@
 
 /* Functions */
 
+function calcOilChange(currentMileage) {
+  return 5000 + currentMileage;
+}
+
+var changeCarOil = calcOilChange(113284);
+alert("Change your car oil when you reach this mileage: " + changeCarOil);
+
 function calculateAge(birthYear) {
-    return 2019 - birthYear;
+  return 2019 - birthYear;
 }
 
 var ageJim = calculateAge(1995);
 var ageMichael = calculateAge(1989);
 var ageTony = calculateAge(1990);
-console.log(ageJim, ageMichael, ageTony);
+alert(
+  "Jim is " +
+    ageJim +
+    ". " +
+    "Michael is " +
+    ageMichael +
+    ". " +
+    "Tony is " +
+    ageTony +
+    ". "
+);
