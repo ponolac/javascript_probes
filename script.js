@@ -154,126 +154,126 @@
 
 /* Switch Statement (can replace multiple if-else statements for readability) */
 
-var job = "instructor";
-switch (job) {
-  case "teacher":
-  case "instructor":
-    console.log(firstName + " teaches kids how to code.");
-    break;
-  case "driver":
-    console.log(firstName + " drives a bus.");
-    break;
-  case "poolman":
-    console.log(firstName + " cleans pools.");
-    break;
-  case "cop":
-    console.log(firstName + " writes tickets as a cop.");
-    break;
-  default:
-    console.log(firstName + " does nothing.");
-}
+// var job = "instructor";
+// switch (job) {
+//   case "teacher":
+//   case "instructor":
+//     console.log(firstName + " teaches kids how to code.");
+//     break;
+//   case "driver":
+//     console.log(firstName + " drives a bus.");
+//     break;
+//   case "poolman":
+//     console.log(firstName + " cleans pools.");
+//     break;
+//   case "cop":
+//     console.log(firstName + " writes tickets as a cop.");
+//     break;
+//   default:
+//     console.log(firstName + " does nothing.");
+// }
 
-// switch statement practice / refactor
+// // switch statement practice / refactor
 
-// var firstName = 'John';
-// var age = 24;
+// // var firstName = 'John';
+// // var age = 24;
 
-// if (age < 13) {
-//     console.log(firstName + ' is a boy.');
-// } else if (age >= 13 && age < 20) {
-//     console.log(firstName + ' is a teenager.');
-// } else if (age >= 20 && age < 30) {
-//     console.log(firstName + ' is a young man.');
+// // if (age < 13) {
+// //     console.log(firstName + ' is a boy.');
+// // } else if (age >= 13 && age < 20) {
+// //     console.log(firstName + ' is a teenager.');
+// // } else if (age >= 20 && age < 30) {
+// //     console.log(firstName + ' is a young man.');
+// // } else {
+// //     console.log(firstName + ' is a man.');
+// // };
+
+// var firstName = "John";
+// var age = 99;
+
+// switch (true) {
+//   case age < 13:
+//     console.log(firstName + " is a boy.");
+//     break;
+//   case age >= 13 && age < 20:
+//     console.log(firstName + " is a teen.");
+//     break;
+//   case age >= 20 && age < 30:
+//     console.log(firstName + " is a young man.");
+//     break;
+//   default:
+//     console.log(firstName + " is a man.");
+// }
+
+// // Switch statement.
+
+// // Muscle-building time-scale. Year(s) of proper training, potential rate of muscle gain per year.
+
+// var yearsOfTraining = 2;
+// switch (true) {
+//   case yearsOfTraining === 1:
+//     console.log(
+//       "If there is 1 year of proper training, expect 20-25lbs (2lbs/mo)"
+//     );
+//     break;
+//   case yearsOfTraining === 2:
+//     console.log(
+//       "If there is 2 years of proper training, expect 10-12lbs (1lb/mo)"
+//     );
+//     break;
+//   case yearsOfTraining === 3:
+//     console.log(
+//       "If there is 3 years of proper training, expect 5-6lbs (0.5lb/mo)"
+//     );
+//     break;
+//   default:
+//     console.log("If there is 4+ years of proper training, expect2-3lbs");
+// }
+
+// /* Truthy and Falsy values, and equality operators */
+
+// // Falsy values: undefined, null, 0, '', NaN     These will be converted to false when evaluated in a true/false if/else condition.
+
+// // Truthy values: NOT falsy values.
+
+// // A way to test if a var has been defined or not:
+// var height = 0;
+// if (height || height === 0) {
+//   // ie: so if (height var "exists or is defined"), then (height) is converted to true, and if block is entered.
+//   console.log("variable is defined");
 // } else {
-//     console.log(firstName + ' is a man.');
-// };
+//   console.log("variable has NOT been defined");
+// }
 
-var firstName = "John";
-var age = 99;
+// // Equality operators == and ===
+// // Type coercion means the two data types don't have to match when using the non-strict equality operator: ==
+// height = 23;
+// if (height == "23") {
+//   console.log("The == operator does type coercion");
+// }
 
-switch (true) {
-  case age < 13:
-    console.log(firstName + " is a boy.");
-    break;
-  case age >= 13 && age < 20:
-    console.log(firstName + " is a teen.");
-    break;
-  case age >= 20 && age < 30:
-    console.log(firstName + " is a young man.");
-    break;
-  default:
-    console.log(firstName + " is a man.");
-}
+// // Equality operators: strict ===, and abstract ==
+// // Type Coercion ==
+// var force = 81;
+// if (force == "81") {
+//   console.log("The == operator does type coercion");
+// }
 
-// Switch statement.
+// // Check if a variable exists using typeof
+// var temp;
+// if (typeof temp == "undefined") {
+//   console.log("temp does NOT exist");
+// } else {
+//   console.log("temp exists");
+// }
 
-// Muscle-building time-scale. Year(s) of proper training, potential rate of muscle gain per year.
-
-var yearsOfTraining = 2;
-switch (true) {
-  case yearsOfTraining === 1:
-    console.log(
-      "If there is 1 year of proper training, expect 20-25lbs (2lbs/mo)"
-    );
-    break;
-  case yearsOfTraining === 2:
-    console.log(
-      "If there is 2 years of proper training, expect 10-12lbs (1lb/mo)"
-    );
-    break;
-  case yearsOfTraining === 3:
-    console.log(
-      "If there is 3 years of proper training, expect 5-6lbs (0.5lb/mo)"
-    );
-    break;
-  default:
-    console.log("If there is 4+ years of proper training, expect2-3lbs");
-}
-
-/* Truthy and Falsy values, and equality operators */
-
-// Falsy values: undefined, null, 0, '', NaN     These will be converted to false when evaluated in a true/false if/else condition.
-
-// Truthy values: NOT falsy values.
-
-// A way to test if a var has been defined or not:
-var height = 0;
-if (height || height === 0) {
-  // ie: so if (height var "exists or is defined"), then (height) is converted to true, and if block is entered.
-  console.log("variable is defined");
-} else {
-  console.log("variable has NOT been defined");
-}
-
-// Equality operators == and ===
-// Type coercion means the two data types don't have to match when using the non-strict equality operator: ==
-height = 23;
-if (height == "23") {
-  console.log("The == operator does type coercion");
-}
-
-// Equality operators: strict ===, and abstract ==
-// Type Coercion ==
-var force = 81;
-if (force == "81") {
-  console.log("The == operator does type coercion");
-}
-
-// Check if a variable exists using typeof
-var temp;
-if (typeof temp == "undefined") {
-  console.log("temp does NOT exist");
-} else {
-  console.log("temp exists");
-}
-
-// Check if a variable exists using if-else
-var volume;
-if (volume) {
-  console.log("variable is defined");
-} else {
-  console.log("variable is NOT defined");
-}
+// // Check if a variable exists using if-else
+// var volume;
+// if (volume) {
+//   console.log("variable is defined");
+// } else {
+//   console.log("variable is NOT defined");
+// }
 
 /* Functions */
 
@@ -281,4 +281,7 @@ function calculateAge(birthYear) {
     return 2019 - birthYear;
 }
 
-calculateAge(1990);
+var ageJim = calculateAge(1995);
+var ageMichael = calculateAge(1989);
+var ageTony = calculateAge(1990);
+console.log(ageJim, ageMichael, ageTony);
