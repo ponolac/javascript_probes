@@ -277,55 +277,69 @@
 
 /* Functions */
 
-function calcOilChange(currentMileage) {
-  return 5000 + currentMileage;
-}
+// function calcOilChange(currentMileage) {
+//   return 5000 + currentMileage;
+// }
 
-var changeCarOil = calcOilChange(113284);
-alert("Change your car oil when you reach this mileage: " + changeCarOil);
+// var changeCarOil = calcOilChange(113284);
+// alert("Change your car oil when you reach this mileage: " + changeCarOil);
 
-function calculateAge(birthYear) {
-  return 2019 - birthYear;
-}
+// function calculateAge(birthYear) {
+//   return 2019 - birthYear;
+// }
 
-var ageJim = calculateAge(1995);
-var ageMichael = calculateAge(1989);
-var ageTony = calculateAge(1990);
-alert(
-  "Jim is " +
-    ageJim +
-    ". " +
-    "Michael is " +
-    ageMichael +
-    ". " +
-    "Tony is " +
-    ageTony +
-    ". "
-);
+// var ageJim = calculateAge(1995);
+// var ageMichael = calculateAge(1989);
+// var ageTony = calculateAge(1990);
+// alert(
+//   "Jim is " +
+//     ageJim +
+//     ". " +
+//     "Michael is " +
+//     ageMichael +
+//     ". " +
+//     "Tony is " +
+//     ageTony +
+//     ". "
+// );
 
 // Can pass in more than one argument into a function. Also added if-else.
 
-function yearsUntilRetirement(year, firstName) {
-  var age = calculateAge(year);
-  var retirement = 65 - age;
+// function yearsUntilRetirement(year, firstName) {
+//   var age = calculateAge(year);
+//   var retirement = 65 - age;
 
-  if (retirement > 0) {
-    console.log(firstName + " retires in " + retirement + " years.");
-  } else if (retirement < 0) {
-    console.log(firstName + " is already retired.");
-  }
-}
+//   if (retirement > 0) {
+//     console.log(firstName + " retires in " + retirement + " years.");
+//   } else if (retirement < 0) {
+//     console.log(firstName + " is already retired.");
+//   }
+// }
 
-yearsUntilRetirement(1990, "John");
-yearsUntilRetirement(1950, "Jimmy");
-yearsUntilRetirement(1996, "Jason");
+// yearsUntilRetirement(1990, "John");
+// yearsUntilRetirement(1950, "Jimmy");
+// yearsUntilRetirement(1996, "Jason");
 
 // Function statements and expressions.
 
-// function declaration
+// function declaration:
 // function whatDoYouDo(job, firstName) {}
 
 // function expression:
 var whatDoYouDo = function(job, firstName) {
-
+    switch (job) {
+        case 'professor':
+            return firstName + ' teaches.'
+            // no break here because the function immediately finishes when using return.
+        case 'truck driver':
+            return firstName + ' drives a truck.'
+        case 'designer':
+            return firstName + ' designs.'
+        default:
+            return firstName + ' does something else.'
+    }
 }
+
+console.log(whatDoYouDo('professor', 'John'));
+console.log(whatDoYouDo('truck driver', 'Jimmy'));
+console.log(whatDoYouDo('', 'James'));
