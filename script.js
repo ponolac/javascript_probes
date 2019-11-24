@@ -325,21 +325,23 @@
 // function declarations perform actions:
 // function whatDoYouDo(job, firstName) {}
 
-// function expressions always produces a value:
+// function expressions always produce a value:
 var whatDoYouDo = function(job, firstName) {
-    switch (job) {
-        case 'professor':
-            return firstName + ' teaches.'
-            // no break here because the function immediately finishes when using return.
-        case 'truck driver':
-            return firstName + ' drives a truck.'
-        case 'designer':
-            return firstName + ' designs.'
-        default:
-            return firstName + ' does something else.'
-    }
-}
+  switch (job) {
+    case "professor":
+      return firstName + " teaches people.";
+    // no break here because the function immediately finishes when using return.
+    case "truck driver":
+      return firstName + " drives a truck.";
+    case "designer":
+      return firstName + " designs things.";
+    default:
+      return firstName + " does something else.";
+  }
+};
 
-console.log(whatDoYouDo('professor', 'John'));
-console.log(whatDoYouDo('truck driver', 'Jimmy'));
-console.log(whatDoYouDo('', 'James'));
+console.log(whatDoYouDo("professor", "John"));
+console.log(whatDoYouDo("truck driver", "Jimmy"));
+console.log(whatDoYouDo("valet", "James"));
+
+// Arrays
