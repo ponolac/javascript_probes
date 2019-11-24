@@ -322,5 +322,10 @@ yearsUntilRetirement(1996, "Jason");
 
 // Function statements and expressions.
 
+// function declaration
+// function whatDoYouDo(job, firstName) {}
+
 // function expression:
-var whatDoYouDo = function(job, firstName)
+var whatDoYouDo = function(job, firstName) {
+
+}
