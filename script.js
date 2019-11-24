@@ -303,6 +303,8 @@ alert(
     ". "
 );
 
+// Can pass in more than one argument into a function. Also added if-else.
+
 function yearsUntilRetirement(year, firstName) {
   var age = calculateAge(year);
   var retirement = 65 - age;
@@ -317,3 +319,8 @@ function yearsUntilRetirement(year, firstName) {
 yearsUntilRetirement(1990, "John");
 yearsUntilRetirement(1950, "Jimmy");
 yearsUntilRetirement(1996, "Jason");
+
+// Function statements and expressions.
+
+// function expression:
+var whatDoYouDo = function(job, firstName)
