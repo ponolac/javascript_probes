@@ -344,4 +344,9 @@ console.log(whatDoYouDo("professor", "John"));
 console.log(whatDoYouDo("truck driver", "Jimmy"));
 console.log(whatDoYouDo("valet", "James"));
 
-// Arrays
+// Arrays (zero-based)
+
+var carMFG = ['Ford', 'Datsun', 'Honda'];
+var carModels = new Array('F250', '240z', 'C-RV');
+
+console.log(carMFG[0]);
