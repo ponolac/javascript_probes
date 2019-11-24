@@ -346,7 +346,8 @@ console.log(whatDoYouDo("valet", "James"));
 
 // Arrays (zero-based)
 
+// Initialize new array
 var carMFG = ['Ford', 'Datsun', 'Honda'];
 var carModels = new Array('F250', '240z', 'C-RV');
-
-console.log(carMFG[0]);
+console.log(carMFG);
+console.log(carMFG.length);
