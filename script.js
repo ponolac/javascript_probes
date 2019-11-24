@@ -322,10 +322,10 @@
 
 // Function statements and expressions.
 
-// function declaration:
+// function declarations perform actions:
 // function whatDoYouDo(job, firstName) {}
 
-// function expression:
+// function expressions always produces a value:
 var whatDoYouDo = function(job, firstName) {
     switch (job) {
         case 'professor':
