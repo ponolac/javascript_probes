@@ -347,12 +347,15 @@ console.log(whatDoYouDo("valet", "James"));
 // Arrays (zero-based)
 
 // Initialize new array
-var carMFG = ['Ford', 'Datsun', 'Honda'];
-var carModels = new Array('F250', '240z', 'C-RV');
+var carMFG = ["Ford", "Datsun", "Honda"];
+var carModels = new Array("F250", "240z", "C-RV");
 console.log(carMFG);
 console.log(carMFG.length);
 
 // Mutate array data
-carMFG[2] = 'Mazda';
-carMFG[carMFG.length] = "Dodge"; 
+carMFG[2] = "Mazda";
+carMFG[carMFG.length] = "Dodge";
 console.log(carMFG);
+
+// Different data types
+var john = ["John", "Smith", 1990, "driver", false];
