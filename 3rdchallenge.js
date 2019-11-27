@@ -1,7 +1,7 @@
 // Tip Calculator
 
 // create an array with the tips
-var tipTotals = [];
+var tipTotals = []; 
 
 // create another array with tips plus bill
 
