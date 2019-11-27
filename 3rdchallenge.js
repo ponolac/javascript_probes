@@ -18,3 +18,19 @@ console.log(tip(.20, 35));
 // Tip 20% of bill when bill is < $50
 // Tip 15% of bill when bill is between $50-$200
 // Tip 10% of bill when bill is > $200
+
+// alternative solution using if else:
+
+function tipCalculator(bill) {
+    var percentage;
+    if (bill < 50) {
+        percentage = .2;
+    } else if (bill >= 50 && bill <= 200) {
+        percentage = .15;
+    } else {
+        percentage = .1;
+    }
+    return percentage * bill;
+}
+
+console.log(tipCalculator(30));
