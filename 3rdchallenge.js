@@ -1,10 +1,14 @@
 // Tip Calculator
 
 // create an array with the tips
+var tipTotals = [];
 
 // create another array with tips plus bill
 
 // create a function that calculates the tip
+var tip = function calcTip(tipPercentage, billAmount) {
+    return tipPercentage * billAmount;
+}
 
 // to calculate 20% of a value, multiply the value by 0.2
 
