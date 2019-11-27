@@ -11,6 +11,8 @@ var tip = function calcTip(tipPercentage, billAmount) {
     return tipPercentage * billAmount;
 }
 
+console.log(tip(.20, 35));
+
 // to calculate 20% of a value, multiply the value by 0.2
 
 // Tip 20% of bill when bill is < $50
