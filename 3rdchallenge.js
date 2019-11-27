@@ -4,6 +4,7 @@
 var tipTotals = []; 
 
 // create another array with tips plus bill
+var billTotals = [124, 48, 268];
 
 // create a function that calculates the tip
 var tip = function calcTip(tipPercentage, billAmount) {
