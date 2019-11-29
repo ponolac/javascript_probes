@@ -21,27 +21,39 @@ console.log(tip(0.2, 35));
 
 // alternative solution using if else:
 
-function tipCalculator(bill) {
-  var percentage;
-  if (bill < 50) {
-    percentage = 0.2;
-  } else if (bill >= 50 && bill <= 200) {
-    percentage = 0.15;
-  } else {
-    percentage = 0.1;
-  }
-  return percentage * bill;
-}
+// function tipCalculator(bill) {
+//   var percentage;
+//   if (bill < 50) {
+//     percentage = 0.2;
+//   } else if (bill >= 50 && bill <= 200) {
+//     percentage = 0.15;
+//   } else {
+//     percentage = 0.1;
+//   }
+//   return percentage * bill;
+// }
 
-console.log(tipCalculator(30));
+// console.log(tipCalculator(30));
 
-var bills = [124, 48, 268];
+// var bills = [124, 48, 268];
 
-var tips = [
-  tipCalculator(bills[0]),
-  tipCalculator(bills[1]),
-  tipCalculator(bills[2])
-];
+// var tips = [
+//   tipCalculator(bills[0]),
+//   tipCalculator(bills[1]),
+//   tipCalculator(bills[2])
+// ];
 
-var finalValues = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-console.log(tips, finalValues);
+// var finalValues = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+// console.log(tips, finalValues);
+
+// Objects and properties
+
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: 'false'
+};
+console.log(john.job); // can access object properties using dot notation
