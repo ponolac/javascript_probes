@@ -57,3 +57,4 @@ var john = {
     isMarried: 'false'
 };
 console.log(john.job); // can access object properties using dot notation 
+console.log(john['birthYear']); // can access obj prop using brackets with a string
