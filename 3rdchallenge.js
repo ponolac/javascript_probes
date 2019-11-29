@@ -58,3 +58,6 @@ var john = {
 };
 console.log(john.job); // can access object properties using dot notation 
 console.log(john['birthYear']); // can access obj prop using brackets with a string
+
+var x = 'isMarried'; // can access obj prop using a variable and referencing it inside brackets
+console.log(john[x]);
