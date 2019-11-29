@@ -326,36 +326,71 @@
 // function whatDoYouDo(job, firstName) {}
 
 // function expressions always produce a value:
-var whatDoYouDo = function(job, firstName) {
-  switch (job) {
-    case "professor":
-      return firstName + " teaches people.";
-    // no break here because the function immediately finishes when using return.
-    case "truck driver":
-      return firstName + " drives a truck.";
-    case "designer":
-      return firstName + " designs things.";
-    default:
-      return firstName + " does something else.";
-  }
+// var whatDoYouDo = function(job, firstName) {
+//   switch (job) {
+//     case "professor":
+//       return firstName + " teaches people.";
+//     // no break here because the function immediately finishes when using return.
+//     case "truck driver":
+//       return firstName + " drives a truck.";
+//     case "designer":
+//       return firstName + " designs things.";
+//     default:
+//       return firstName + " does something else.";
+//   }
+// };
+
+// console.log(whatDoYouDo("professor", "John"));
+// console.log(whatDoYouDo("truck driver", "Jimmy"));
+// console.log(whatDoYouDo("valet", "James"));
+
+// // Arrays (zero-based)
+
+// // Initialize new array
+// var carMFG = ["Ford", "Datsun", "Honda"];
+// var carModels = new Array("F250", "240z", "C-RV");
+// console.log(carMFG);
+// console.log(carMFG.length);
+
+// // Mutate array data
+// carMFG[2] = "Mazda";
+// carMFG[carMFG.length] = "Dodge";
+// console.log(carMFG);
+
+// // Different data types
+// var carDetails = ["Ford", "F150", 1990, "blue", false];
+
+// // push method adds element to end of array
+// carDetails.push(1995);
+// // unshift method adds element to beginning of array
+// carDetails.unshift(false);
+// // pop method removes element from end of array
+// carDetails.pop();
+// carDetails.pop();
+// // shift method removes element from beginning of array
+// carDetails.shift();
+// console.log(carDetails);
+// // indexOf will return the position of the argument that is passed in e.g. inside this array:
+// console.log(carDetails.indexOf("blue"));
+
+// var isCarTypeAvailable =
+//   carDetails.indexOf("Toyota") === -1
+//     ? "Toyota is NOT an option"
+//     : "Toyota is an option";
+// console.log(isCarTypeAvailable);
+
+// Objects and properties
+
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: 'false'
 };
+console.log(john.job); // can access object properties using dot notation 
+console.log(john['birthYear']); // can access obj prop using brackets with a string
 
-console.log(whatDoYouDo("professor", "John"));
-console.log(whatDoYouDo("truck driver", "Jimmy"));
-console.log(whatDoYouDo("valet", "James"));
-
-// Arrays (zero-based)
-
-// Initialize new array
-var carMFG = ["Ford", "Datsun", "Honda"];
-var carModels = new Array("F250", "240z", "C-RV");
-console.log(carMFG);
-console.log(carMFG.length);
-
-// Mutate array data
-carMFG[2] = "Mazda";
-carMFG[carMFG.length] = "Dodge";
-console.log(carMFG);
-
-// Different data types
-var john = ["John", "Smith", 1990, "driver", false];
+var x = 'isMarried'; // can access obj prop using a variable and referencing it inside brackets
+console.log(john[x]);
