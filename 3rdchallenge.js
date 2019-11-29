@@ -56,4 +56,4 @@ var john = {
     job: 'teacher',
     isMarried: 'false'
 };
-console.log(john.job); // can access object properties using dot notation
+console.log(john.job); // can access object properties using dot notation 
