@@ -382,15 +382,20 @@
 // Objects and properties
 
 var john = {
-    firstName: 'John',
-    lastName: 'Smith',
-    birthYear: 1990,
-    family: ['Jane', 'Mark', 'Bob', 'Emily'],
-    job: 'teacher',
-    isMarried: 'false'
+  firstName: "John",
+  lastName: "Smith",
+  birthYear: 1990,
+  family: ["Jane", "Mark", "Bob", "Emily"],
+  job: "teacher",
+  isMarried: "false"
 };
-console.log(john.job); // can access object properties using dot notation 
-console.log(john['birthYear']); // can access obj prop using brackets with a string
+console.log(john.job); // can access object properties using dot notation
+console.log(john["birthYear"]); // can access obj prop using brackets with a string
 
-var x = 'isMarried'; // can access obj prop using a variable and referencing it inside brackets
+var x = "isMarried"; // can access obj prop using a variable and referencing it inside brackets
 console.log(john[x]);
+
+// Mutate object
+john.job = 'designer'; // mutate object data using dot notation
+john['isMarried'] = true; // mutate object data using bracket notation
+console.log(john);
