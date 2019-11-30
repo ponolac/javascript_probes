@@ -381,7 +381,7 @@
 
 // Objects and properties
 
-   // object literal (curly braces)
+// object literal (curly braces)
 // var john = {
 //   firstName: "John",
 //   lastName: "Smith",
@@ -410,19 +410,26 @@
 // console.log(jane.lastName);
 // console.log(jane);
 
- // note: objects can hold different types of data like arrays and other objects. But we can also attach functions to objects, which are then called methods.
+// note: objects can hold different types of data like arrays and other objects. But we can also attach functions to objects, which are then called methods.
 
- // METHODS (functions attached to objects):
+// METHODS (functions attached to objects):
 
- var john = {
-    firstName: "John",
-    lastName: "Smith",
-    birthYear: 1956,
-    family: ["Jane", "Mark", "Bob", "Emily"],
-    job: "teacher",
-    isMarried: "false",
-    calcAge: function() {
-        return 2019 - this.birthYear;
-    }
-  };
-  console.log(john.calcAge(john.birthYear));
+var john = {
+  firstName: "John",
+  lastName: "Smith",
+  birthYear: 1918,
+  family: ["Jane", "Mark", "Bob", "Emily"],
+  job: "teacher",
+  isMarried: "false",
+  calcAge: function() {
+    return 2019 - this.birthYear;
+  }
+};
+//   console.log(john.calcAge(john.birthYear));
+
+
+// practice: store the result of calcAge into the current object
+var age = john.calcAge();
+john.age = age;
+// refactor:
+john.age = john.calcAge();
