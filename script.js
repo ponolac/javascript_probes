@@ -399,3 +399,12 @@ console.log(john[x]);
 john.job = 'designer'; // mutate object data using dot notation
 john['isMarried'] = true; // mutate object data using bracket notation
 console.log(john);
+
+// Initialize new object
+var jane = new Object();
+jane.hairColor = 'Brown';
+jane.dogName = 'Doggo';
+jane.hasCat = false;
+jane['lastName'] = 'Smith';
+console.log(jane.lastName);
+console.log(jane);
