@@ -381,6 +381,7 @@
 
 // Objects and properties
 
+   // object literal (curly braces)
 var john = {
   firstName: "John",
   lastName: "Smith",
@@ -400,7 +401,7 @@ john.job = 'designer'; // mutate object data using dot notation
 john['isMarried'] = true; // mutate object data using bracket notation
 console.log(john);
 
-// Initialize new object
+// Initialize new object     New Object Syntax
 var jane = new Object();
 jane.hairColor = 'Brown';
 jane.dogName = 'Doggo';
