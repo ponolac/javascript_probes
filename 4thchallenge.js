@@ -28,13 +28,31 @@ var john = {
   }
 };
 
-mark.calcBMI(); // call the method
-john.calcBMI(); // call the method
-console.log(mark, john);
+// mark.calcBMI(); // call the method
+// john.calcBMI(); // call the method
+// console.log(mark, john);
 
 // Log to the console who has the highest BMI. They might have the same BMI.
 
-if (mark.markBMI > john.johnBMI) {
+/* if (mark.markBMI > john.johnBMI) {
+  console.log(
+    mark.fullName +
+      "'s BMI is higher than " +
+      mark.fullName +
+      "'s BMI! Mark's BMI is " +
+      mark.markBMI
+  );
+} else if (mark.markBMI < john.johnBMI) {
+  console.log(
+    "John's BMI is higher than Mark's BMI! John's BMI is " + john.johnBMI
+  );
+} else {
+  console.log("Both Mark and John have the same BMI.");
+} */
+
+// We can actually call/calculate the method AND compare it at the same time, then it will directly read the value from the object. This process uses the returned values from the methods.
+
+if (mark.calcBMI() > john.calcBMI()) {
   console.log(
     mark.fullName +
       "'s BMI is higher than " +
