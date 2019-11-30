@@ -417,19 +417,24 @@
 var john = {
   firstName: "John",
   lastName: "Smith",
-  birthYear: 1918,
+  birthYear: 1900,
   family: ["Jane", "Mark", "Bob", "Emily"],
   job: "teacher",
   isMarried: "false",
   calcAge: function() {
-    return 2019 - this.birthYear;
+    // return 2019 - birthYear;
+    // return 2019 - this.birthYear;
+    this.age = 2019 - this.birthYear; // refactor: we can store the calcAge result using THIS keyword. ie: this.age means john.age
   }
 };
+
+john.calcAge();
+console.log(john);
+
 //   console.log(john.calcAge(john.birthYear));
 
-
 // practice: store the result of calcAge into the current object
-var age = john.calcAge();
-john.age = age;
-// refactor:
-john.age = john.calcAge();
+// var age = john.calcAge();
+// john.age = age;
+// // refactor:
+// john.age = john.calcAge();
