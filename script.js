@@ -409,3 +409,6 @@ jane.hasCat = false;
 jane['lastName'] = 'Smith';
 console.log(jane.lastName);
 console.log(jane);
+
+ // note: objects can hold different types of data like arrays and other objects. But we can also attach functions to objects, which are then called methods.
+ 
