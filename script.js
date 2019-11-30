@@ -382,33 +382,47 @@
 // Objects and properties
 
    // object literal (curly braces)
-var john = {
-  firstName: "John",
-  lastName: "Smith",
-  birthYear: 1990,
-  family: ["Jane", "Mark", "Bob", "Emily"],
-  job: "teacher",
-  isMarried: "false"
-};
-console.log(john.job); // can access object properties using dot notation
-console.log(john["birthYear"]); // can access obj prop using brackets with a string
+// var john = {
+//   firstName: "John",
+//   lastName: "Smith",
+//   birthYear: 1990,
+//   family: ["Jane", "Mark", "Bob", "Emily"],
+//   job: "teacher",
+//   isMarried: "false"
+// };
+// console.log(john.job); // can access object properties using dot notation
+// console.log(john["birthYear"]); // can access obj prop using brackets with a string
 
-var x = "isMarried"; // can access obj prop using a variable and referencing it inside brackets
-console.log(john[x]);
+// var x = "isMarried"; // can access obj prop using a variable and referencing it inside brackets
+// console.log(john[x]);
 
-// Mutate object
-john.job = 'designer'; // mutate object data using dot notation
-john['isMarried'] = true; // mutate object data using bracket notation
-console.log(john);
+// // Mutate object
+// john.job = 'designer'; // mutate object data using dot notation
+// john['isMarried'] = true; // mutate object data using bracket notation
+// console.log(john);
 
-// Initialize new object     New Object Syntax
-var jane = new Object();
-jane.hairColor = 'Brown';
-jane.dogName = 'Doggo';
-jane.hasCat = false;
-jane['lastName'] = 'Smith';
-console.log(jane.lastName);
-console.log(jane);
+// // Initialize new object     New Object Syntax
+// var jane = new Object();
+// jane.hairColor = 'Brown';
+// jane.dogName = 'Doggo';
+// jane.hasCat = false;
+// jane['lastName'] = 'Smith';
+// console.log(jane.lastName);
+// console.log(jane);
 
  // note: objects can hold different types of data like arrays and other objects. But we can also attach functions to objects, which are then called methods.
- 
+
+ // METHODS (functions attached to objects):
+
+ var john = {
+    firstName: "John",
+    lastName: "Smith",
+    birthYear: 1990,
+    family: ["Jane", "Mark", "Bob", "Emily"],
+    job: "teacher",
+    isMarried: "false",
+    calcAge: function(birthYear) {
+        return 2019 - birthYear;
+    }
+  };
+  console.log(john.calcAge(1990));
