@@ -10,13 +10,12 @@ var mark = {
   mass: 75,
   height: 1.79,
   calcBMI: function() {
+    // used a function without an argument because the height & mass will be grabbed from the current object.
     // return this.mass / (this.height * this.height);
     this.markBMI = this.mass / (this.height * this.height); // I think this will return the BMI from the method... and then store it into markBMI.
+    return this.markBMI;
   }
 };
-
-mark.calcBMI();
-console.log(mark);
 
 var john = {
   fullName: "John Mead",
@@ -25,17 +24,23 @@ var john = {
   calcBMI: function() {
     // return this.mass / (this.height * this.height);
     this.johnBMI = this.mass / (this.height * this.height);
+    return this.johnBMI;
   }
 };
 
-john.calcBMI();
-console.log(john);
+mark.calcBMI(); // call the method
+john.calcBMI(); // call the method
+console.log(mark, john);
 
 // Log to the console who has the highest BMI. They might have the same BMI.
 
 if (mark.markBMI > john.johnBMI) {
   console.log(
-    "Mark's BMI is higher than John's BMI! Mark's BMI is " + mark.markBMI
+    mark.fullName +
+      "'s BMI is higher than " +
+      mark.fullName +
+      "'s BMI! Mark's BMI is " +
+      mark.markBMI
   );
 } else if (mark.markBMI < john.johnBMI) {
   console.log(
