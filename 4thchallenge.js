@@ -1,23 +1,27 @@
-// Using objects and methods. 
+// Using objects and methods.
 // Create an object for Mark and John with properties for their full name, mass, and height.
-
-var Mark = {
-    fullName: 'Mark Johnson',
-    mass: 75,
-    height: 1.79
-};
-console.log(Mark);
-
-var John = {
-    fullName: 'John Mead',
-    mass: 81,
-    height: 1.92
-};
-console.log(John);
-
 // Add a method to each object to calculate the BMI.
-
 // Save the BMI to the object
+
+var mark = {
+  fullName: "Mark Johnson",
+  mass: 75,
+  height: 1.79,
+  calcBMI: function() {
+    // return this.mass / (this.height * this.height);
+    this.markBMI = this.mass / (this.height * this.height);
+  }
+};
+
+mark.calcBMI();
+console.log(mark);
+
+var john = {
+  fullName: "John Mead",
+  mass: 81,
+  height: 1.92
+};
+console.log(john);
 
 // Also, return the BMI from the method
 
