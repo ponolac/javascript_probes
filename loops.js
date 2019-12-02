@@ -32,9 +32,21 @@ while (i < john.length) {
   i++;
 } */
 
-// Continue and Break Statements
+// Continue Statements are used to quit the current iteration of a loop & continue to the next iteration.
+// Break Statements are used to break out of the loop and stop altogether.
 
 var john = ["John", "Smith", 1990, "designer", false];
 
-for (var i = 0; i < john.length; i++) {
+// for (var i = 0; i < john.length; i++) {
+//     if (typeof john[i] !==  'string') continue;
+//     console.log(john[i]);
+// }
+
+// for (var i = 0; i < john.length; i++) {
+//   if (typeof john[i] !== "string") break;
+//   console.log(john[i]);
+// }
+
+for (var i = 4; i < john.length; i--) {
     console.log(john[i]);
+}
