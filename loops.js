@@ -47,6 +47,8 @@ var john = ["John", "Smith", 1990, "designer", false];
 //   console.log(john[i]);
 // }
 
+// Looping backwards
+
 for (var i = 4; i < john.length; i--) {
     console.log(john[i]);
 }
