@@ -47,7 +47,7 @@ var john = ["John", "Smith", 1990, "designer", false];
 //   console.log(john[i]);
 // }
 
-// Looping backwards
+// Looping backwards and looping thru arrays
 
 // for (var i = 4; i < john.length; i--) {
 //     console.log(john[i]);
@@ -56,6 +56,8 @@ var john = ["John", "Smith", 1990, "designer", false];
 for (var i = john.length - 5; i >= 0; i--) {
     console.log(john[i]);
 }
+
+
 
 var names = ['Peter', 'Tom', 'Jim'];
 for (var i = 0; i < names.length; i++) {
