@@ -62,7 +62,7 @@ for (var i = 0; i < names.length; i++) {
 	console.log(names[i]);
 }
 
-// Conventions
+/* // Conventions
 
 // bad - no space after for
 for(var i = 0; i < 11; i++) {
@@ -93,6 +93,6 @@ for (var i = 0; i < 11; i++)
 // good
 for (var i = 0; i < 11; i++) {
 	console.log(i);
-}
+} */
 
 // an infinite loop is caused by conditions that are evaluated and always return true
