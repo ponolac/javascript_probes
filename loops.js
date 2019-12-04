@@ -57,9 +57,40 @@ for (var i = john.length - 5; i >= 0; i--) {
     console.log(john[i]);
 }
 
-
-
 var names = ['Peter', 'Tom', 'Jim'];
 for (var i = 0; i < names.length; i++) {
 	console.log(names[i]);
+}
+
+// Conventions
+
+// bad - no space after for
+for(var i = 0; i < 11; i++) {
+	console.log(i);
+}
+
+// bad - no space between expressions
+for (var i = 0;i < 11;i++) {
+	console.log(i);
+}
+
+// bad - no space between ) and {
+for (var i = 0; i < 11; i++){
+	console.log(i);
+}
+
+// bad - missing indentation
+for (var i = 0; i < 11; i++) {
+console.log(i); //Here is missing indentation
+}
+
+// bad - { on a new line
+for (var i = 0; i < 11; i++)
+{
+	console.log(i);
+}
+
+// good
+for (var i = 0; i < 11; i++) {
+	console.log(i);
 }
