@@ -94,3 +94,5 @@ for (var i = 0; i < 11; i++)
 for (var i = 0; i < 11; i++) {
 	console.log(i);
 }
+
+// an infinite loop is caused by conditions that are evaluated and always return true
