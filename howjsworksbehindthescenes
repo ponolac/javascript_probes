@@ -1,0 +1,23 @@
+js is hosted in some environment, most typically a browser, that's where js runs.
+
+There can also be other hosts such as node.js web server, or some applications that accept js code input.
+
+Js code behind the scenes: 
+
+generally, the host has a js engine that takes the code and executes it
+
+    • In the engine, first the code gets parsed by a parser (checks if code syntax is correct).
+		
+            •  If there is a syntax error, it throws an error and stops the execution.
+
+            •  If syntax is ok, then the parser produces a data structure called Abstract Syntax Tree, which is then translated into machine code.
+
+    • The code runs when it has been converted to machine code. 
+
+    // Execution contexts and the execution stack
+
+    All js code needs to run in an environment, and these environments are called execution contexts.
+
+    execution context: a box, container, or wrapper which stores variables and in which a piece of code is evaluated and executed.
+
+    default execution context is always the global context
