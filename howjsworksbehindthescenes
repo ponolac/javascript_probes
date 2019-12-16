@@ -20,4 +20,4 @@ generally, the host has a js engine that takes the code and executes it
 
     execution context: a box, container, or wrapper which stores variables and in which a piece of code is evaluated and executed.
 
-    default execution context is always the global context
+    The default execution context is always the global context.
