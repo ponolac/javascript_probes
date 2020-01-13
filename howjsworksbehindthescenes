@@ -20,4 +20,18 @@ generally, the host has a js engine that takes the code and executes it
 
     execution context: a box, container, or wrapper which stores variables and in which a piece of code is evaluated and executed.
 
-    default execution context is always the global context
+    The default execution context is always the global context.
+    
+In a global context, all the code that is not inside of any function is executed. The global execution context is for variables and functions that are not inside of any function.
+
+We can also think of an execution as an object.
+
+So the global execution context is associated with the global object, which in case of the browser is the window object.
+
+So everything that we declare in the global context automatically gets attached to the window object in the browser.
+
+And it works like this: declaring a variable called lastName or window.lastName is the exact same thing.
+
+It's like lastName is a property of the window object.
+
+And properties are just variables attached to objects.
